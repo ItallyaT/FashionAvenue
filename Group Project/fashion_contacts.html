@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--
+      Group Project
+      Author: Itallya Taylor
+      Date:   10/22/2020
+
+      Filename:   fashion_contacts.html
+   -->
+
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title>Fashion Avenue</title>
+   <link href="fashion_style.css" rel="stylesheet" />
+   <link href="fashion_contacts.css" rel="stylesheet" />
+   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+   <script src="fashion_form.js"></script>
+</head>
+<!--Itallya's Code-->
+<body> 
+  <header>
+    <h1>Contact Us</h1>
+    <nav class="horizontalNavigation">
+      <img src="header4.jpg" alt="catwalk" />
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a>
+          <ul>
+            <li><a href="#">Mens</a></li>
+            <li><a href="#">Womens</a></li>
+            <li><a href="groupa.html">Teens</a></li>
+            <li><a href="#">Kids</a></li>
+            <li><a href="#">Footwear</a></li>
+          </ul>
+          <!--Itallya's Code-->
+        </li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="fashion_events.html">Events</a></li>
+        <li><a href="fashion_contacts.html">Contact Us</a></li>
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <i class="fa fa-user" aria-hidden="true"></i>
+        <div class="background">
+          <i class="fa fa-shopping-cart" aria-hidden="true"><strong>3</strong></i>
+        </div>
+      </ul>
+    </nav>
+  </header>
+  <!--Itallya's Code-->
+     <!-- SlideShow -->
+     <h1>Join Us</h1>
+      <div class="slideshow">
+        <div class="slide">
+          <div class="count">1/4</div>
+          <img src="row_image.jpg" alt="fashion_show" style="width:100%">
+        </div>
+
+        <div class="slide">
+          <div class="count">2/4</div>
+          <img src="row_image1.jpg" alt="fashion_show" style="width:100%">
+        </div>
+
+        <div class="slide">
+          <div class="count">3/4</div>
+          <img src="row_image3.jpg" alt="fashion_show" style="width:100%">
+        </div>
+        <div class="slide">
+          <div class="count">4/4</div>
+          <img src="row_image4.jpg" alt="fashion_show" style="width:100%">
+        </div>
+      </div>
+      <br>
+      <!--Itallya's Code-->
+      <div style="text-align: center;">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+        <span class="dot" onclick="currentSlide(4)"></span> 
+      </div>
+
+      <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() 
+      {
+        var i;
+        var slides = document.getElementsByClassName("slide");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 5000); // Change image every 5 seconds
+      }
+    </script>
+    <!--Itallya's Code-->
+    <h1>Visit locations near you!</h1>
+    
+    <div class="container">
+      <article class="a1">
+        <div class="wrapper">
+        	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.028072488009!2d-77.01088038532608!3d38.900473354369204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b810742c944f%3A0x3f3d813e98c9e838!2s801%20North%20Capitol%20St%20NE%2C%20Washington%2C%20DC%2020002!5e0!3m2!1sen!2sus!4v1606269464034!5m2!1sen!2sus" width="500" height="375" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="img-indent"></iframe>
+          <div class="extra-wrap">
+            <p>We are in all your areas. We are currently openning a second location in the DMV area, near the National Harbor in Maryland. See us on our Grand Opening and receieve an exclusive gift.</p>
+
+            <p>Fashion Avenue<br />
+              801 North Capitol St NE<br />
+              Washington, DC 20002
+            </p>
+            <!--Itallya's Code-->
+
+            <p><strong>COMING SOON!</strong></p>
+            <p>Fashion Avenue<br />
+              177 Waterfront St<br />
+              Oxon Hill, MD 20745
+            </p>
+
+            <p>Call: <a href="#">(301) 684-9531</a><br>Email:<a href="mailto:itallya.taylor@udc.edu" target="_blank">fashionavenue2@yahoo.com</a></p>
+          </div>
+          <!--Itallya's Code-->
+        </div>
+      </article>
+    </div>
+    <form id="contacts" action="http://www.example.com/fashionavenue/contactus" method="post">
+    	<fieldset id="info">
+    		<legend>Contact Information</legend>
+<!--Itallya's Code-->
+    		<div class="formRow">
+    			<label for="Name">Name*</label>
+    			<input name="conName" id="Name" type="text" placeholder="first and last name" required/>
+    		</div>
+    		
+	    	<div class="formRow">    			
+	    		<label for="Street">Street Address</label>
+	    		<input name="conStreet" id="Street" type="text" />
+    		</div>
+
+    		<div class="formRow">
+	    		<label for="City">City</label>
+	    		<input name="conCity" id="City" type="text" value="Washington" />
+    		</div>
+
+    		<div class="formRow">
+	    		<label for="State">State</label>
+	    		<input name="conState" id="State" type="text" value="DC" />
+    		</div>
+<!--Itallya's Code-->
+    		<div class="formRow">
+	    		<label for="Zip">Postal Code</label>
+	    		<input name="conZip" id="Zip" type="text" placeholder="xxxxx (-xxxx)" pattern="^\d{5}(-\d{4})?$" />
+    		</div>
+
+    		<div class="formRow">
+	    		<label for="Phone">Phone Number</label>
+	    		<input name="conPhone" id="Phone" type="tel" placeholder="(xxx) xxx-xxxx" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
+    		</div>
+
+    		<div class="formRow">
+	    		<label for="Mail">E-mail*</label>
+	    		<input name="conEmail" id="Mail" type="email" placeholder="example@email.com" required/>
+    		</div>
+
+    		<label for="commBox">Tell us more about yourself!</label>
+    		<textarea name="conExp" id="conBox"></textarea>
+    	</fieldset>
+
+    	<div id="buttons">
+    		<input type="submit" value="Submit" />
+    		<input type="reset" value="Clear" />
+    	</div>
+    </form>
+<!--Itallya's Code-->
+    <footer>
+      <p>Copyright &#169; 2020-All Rights Reserved-www.fashionavenue.com ~ Created by Itallya Taylor</p>
+    </footer>
+  </div>
+</div>
+<!--Itallya's Code-->
+</body>
+</html>

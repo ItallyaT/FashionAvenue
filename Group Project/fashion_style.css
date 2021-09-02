@@ -1,0 +1,313 @@
+@charset "utf-8";
+
+/*
+  Group Project 
+  Author: Itallya Taylor
+  Date: 10/27/2020
+*/
+
+html {
+   background: #725A7A;
+   font-family: Barlow, Condensed, sans-serif;
+   height: 100%;
+}
+
+body {
+   background-color: rgb(248, 248, 210);
+   box-shadow: #000000 10px 0px 40px,  #000000 -10px 0px 40px;
+   border-left: 1px solid black;
+   border-right: 1px solid black;
+   height: auto;   
+   margin: 0px auto;
+   max-width: 960px;   
+   min-width: 640px;
+   width: 95%;
+}
+
+header {
+   background-color: #C06C84;
+   border-bottom: 1px solid black;
+   outline: 1px solid black;
+}
+
+header h1 {
+   background: linear-gradient(to right, #FC4437 10%, #C06C84);
+   color: black;
+   font-size: 1.5em;
+   padding: 0px 0px 5px 12px;
+}
+/*Itallya's Code*/
+nav ul li {
+   background-color: #C06C84;
+   font-size: 1em;   
+   padding: 0px 10px;
+   list-style: none;
+   position: relative;
+}
+
+nav ul li a {
+   color: #000000;
+   display: block;
+   width: 100%;
+   text-decoration: none;
+}
+
+nav ul li ul {
+   display: none;
+   position: absolute;
+   background-color: #C06C84;
+   padding: 5px;
+}
+/*Itallya's Code*/
+nav ul li:hover ul {
+   display: block;
+   visibility: visible;
+   z-index: 100;
+}
+
+nav ul li ul li {
+   width: 95px;
+   border-radius: 4px
+}
+
+nav ul li ul li a {
+   padding: 5px 0px;
+}
+
+nav ul li a:hover {
+   color: white;
+   background-color: #C06C84;
+}
+/*Itallya's Code*/
+header img {
+   position: relative;
+   width: 100%;
+}
+
+.fa-search{
+    position: absolute;
+    left: 77%;
+    top: 39%;
+    color:black;
+}
+
+.fa-user{
+     position: absolute;
+    left: 80%;
+    top: 39%;
+    color:black;
+}
+.fa-shopping-cart{
+    position: absolute;
+    left: 83%;
+    top: 39%;
+    color:black;
+    width: 25px;
+    height: -30px;
+    border-radius: 100px;
+    background-color: navajowhite;
+    margin-top: -2px;
+    margin-left: -4px;
+    text-align: left;
+}
+/*Itallya's Code*/
+video {
+   max-width: 100%;
+   position: relative;
+   margin: auto;
+   margin-left: .5em;
+}
+
+.slideshow {
+   max-width: 100%;
+   position: relative;
+   margin: auto;
+}
+
+.slide {
+   position: relative; 
+   display: none;
+}
+
+.count {
+   display: none;
+   position: absolute;
+   top: 0;
+}
+/*Itallya's Code*/
+.dot {
+   cursor: pointer;
+   height: 15px;
+   width: 15px;
+   margin: 0 2px;
+   background-color: #bbb;
+   border-radius: 50%;
+   display: inline-block;
+   transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+   background-color: #717171;
+}
+
+div.row {
+   clear: both;
+}
+/*Itallya's Code*/
+div.row::after {
+   clear: both;
+   content: "";
+   display: table;
+}
+
+div[class^="col-"] {
+   float: left;
+}
+
+div.col-1-3 {width: 33.33%}
+div.col-2-3 {width: 66.67%}
+
+h1 {
+   color: black;
+   background: linear-gradient(to right, #FC4437 25%, rgb(248, 248, 210));
+   font-size: 1.5em;
+   letter-spacing: 2.5px;
+   padding: 5px 0px 5px 12px;
+}
+/*Itallya's Code*/
+h2 {
+   color: black;
+   background: linear-gradient(to right, #FC4437 25%, rgb(248, 248, 210));
+   font-size: 1.1em;
+   text-indent: .5em;
+   letter-spacing: 5px;
+   padding: 5px 0px 5px 12px;
+}
+
+h4 {
+   color: black;
+   font-style: italic;
+   text-indent: 1.5em;
+   letter-spacing: 5px;
+   padding: 5px 0px 5px 12px;
+}
+
+h5 {
+   text-indent: 5em;
+   font-size: 1em;
+}
+/*Itallya's Code*/
+p {
+   line-height: 1.4em;
+   padding-left: 15px;
+   margin: 25px;
+}
+
+img {
+   width: 100%;
+   display: block;
+}
+
+aside {
+   background-color: #6C5B7B;
+   padding-bottom: 2em;
+   margin-left: 1em;
+   margin-right: 1em;
+   outline: 1px solid #;
+}
+/*Itallya's Code*/
+aside h3 {
+   text-align: center;
+   background-color: #F8B195;
+}
+
+dl {
+   font-size: 1em;
+}
+
+dl dt {
+   font-style: italic;
+   text-decoration: underline;
+   margin: 1em;
+}
+
+dl dd {
+   line-height: 1.4em;
+   margin: 0 1em 0 1em;
+}table.schedule {
+   background: white;
+   border: 10px outset #F8B195;
+   border-collapse: collapse;
+   font-size: 0.75em;
+   width: 90%;
+   margin-left: 4em;
+}
+/*Itallya's Code*/
+table.schedule th, table.schedule td {
+   border: 1px solid black;
+}
+
+table.schedule caption {
+   caption-side: bottom;
+   text-align: center;
+}
+
+table.schedule thead {
+   background-color: #F8B195;
+   color: black;
+}
+table.schedule tfoot {
+   background-color: black;
+   color: white;
+}
+/*Itallya's Code*/
+col#firstcol {
+   background: #E9967A;
+   width: 16%;
+}
+
+col.dayCols {
+   background: #FAD1B9;
+   width: 8%;
+}
+
+table.schedule thead tr {
+   height: 30px;
+}
+
+table.schedule tbody tr {
+   height: 40px;
+}
+/*Itallya's Code*/
+.video2 {
+   width: 90%;
+   margin-left: 2.5em;
+}
+
+footer {
+   outline: 1px solid black;
+   color: white;    
+   background: linear-gradient(to right, #FC4437 30%, #C06C84);   
+   font-size: 0.65em;  
+   font-style: normal;
+   height: 30px;
+   line-height: 30px;   
+   text-align: center;
+}
+
+@media only screen and (min-width: 640px) {
+   
+   header nav ul {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+      -webkit-justify-content: center;
+      justify-content: center;
+   }
+   
+   header nav ul li {
+      -webkit-flex: 0 1 auto;
+      flex: 0 1 auto;
+   }
+}
